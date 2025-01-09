@@ -1,0 +1,318 @@
+/* ESCOPO
+01 - HEADER
+02 - HOME
+03 - SOBRE MIM
+04 - PROJETOS
+05 - CONTATO
+06 - FOOTER
+*/
+
+/* ============================================================= */
+
+/* FONTS INSTALADAS */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ============================================================= */
+
+/* RESET DA PÁGINA */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+/* ============================================================= */
+
+/* 01 INÍCIO DA HEADER */
+
+/* MANIPULAÇÃO DA CLASS MÃE DO MENU */
+.container-menu{
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    width: 98%;
+    height: auto;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Kanit';
+}
+
+/* DESCOLAÇÃO DOS ITENS DA LISTA PARA O CENTRO DA HEADER */
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+}
+
+/* ALINHAMENTO DOS ITENS DA LISTA E REMOVENDO O ESTILO DE LISTA */
+ul{
+    display: flex;
+    list-style: none;
+}
+
+/* ADICIONANDO OS ESPAÇOS NECESSÁRIOS PRA CADA ITEM E ESTILIZANDO TODOS */
+.item-menu{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #252323;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* ADICIONANDO UMA ANIMAÇÃO DE COR QUANDO O CURSOR TIVER POR CIMA DO ITEM DA LISTA */
+.item-menu:hover{
+    color: #817d7d;
+    transition: 2ms;
+}
+
+    /* RESPONSIVIDADE PARA TELA MENOR QUE 768px (Exemplo: Tablets e Telas Menores) */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .item-menu {
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .container-menu {
+        width: 95%;
+    }
+}
+/* RESPONSIVIDADE PARA TELA MENOR QUE 480px (Exemplo: Celulares) */
+@media (max-width: 480px) {
+    .item-menu {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .container-menu {
+        width: 100%;
+    }
+}
+
+/* 01 FIM DA HEADER */
+
+/* ============================================================= */
+
+/* INÍCIO DA HOME */
+
+
+.section-home section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.home-left{
+    text-align: left;
+    padding-left: 15%;
+    width: 100%;
+    height: auto;
+}
+
+.home-left h2{
+    font-size: 1.8rem;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.home-left p {
+    max-width: 400px;
+    width: 100%;   
+    color: #333;
+    text-align: justify;
+}
+
+.home-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 15%;
+    width: 100%;
+    align-items: center;
+}
+
+.home-right img {
+    width: 400px;
+    height: auto;
+    border: 4px solid #111;
+    border-radius: 50px;
+    pointer-events: none;
+}
+
+.home-right .icons-home {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-right .icons-home i {
+    font-size: 40px;
+}
+
+.home-right a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-right .icons-home i:hover{
+    color: #5c5a5a;
+    transition: 0.5s;
+}
+
+/* RESPONSIVIDADE PARA TELA MENOR QUE 768px (Exemplo: Tablets e Telas Menores) */
+@media (max-width: 768px) {
+    .section-home section {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .home-left {
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .home-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-left p {
+        max-width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .home-right {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .home-right img {
+        width: 300px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .home-right .icons-home {
+        gap: 15px;
+    }
+
+    .home-right .icons-home i {
+        font-size: 30px;
+    }
+}
+
+/* RESPONSIVIDADE PARA TELA MENOR QUE 480px (Exemplo: Celulares) */
+@media (max-width: 480px) {
+    .home-left h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-left p {
+        font-size: 0.9rem;
+    }
+
+    .home-right img {
+        width: 250px;
+    }
+
+    .home-right .icons-home {
+        gap: 10px;
+    }
+
+    .home-right .icons-home i {
+        font-size: 25px;
+    }
+}
+/* FIM DA HOME */
+
+/* INICIO DO SOBRE MIM */
+
+/* ESTILIZAÇÃO DE TODA SEÇÃO */
+.section-sobre {
+    background: #faf7f7;
+    padding: 6%;
+    margin-top: 5%;
+}
+
+/* ESTILIZAÇÃO DO TITULO DA SEÇÃO */
+.title-sobre {
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold; 
+}
+/* ESTILIZAÇÃO DO CONTEÚDO DA SEÇÃO */
+.text-sobre {
+    color: #333;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/* ESTILIZAÇÃO DOS PARÁGRAFOS */
+.text-sobre p {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Contêiner principal para alinhamento */
+.container-sobre {
+    display: flex; /* Flexbox para alinhamento lado a lado */
+    justify-content: space-between; /* Espaço uniforme entre os itens */
+    align-items: flex-start; /* Alinhar os itens ao topo */
+    gap: 20px; /* Espaço entre os blocos */
+    margin-top: 30px; /* Espaçamento superior */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Bloco individual */
+.subtitle-sobre {
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    flex: 1; /* Faz os itens ocuparem tamanhos iguais */
+}
+/* Título do bloco */
+.title-sub {
+    font-size: 1.8rem; /* Tamanho maior para destaque */
+    color: #333; /* Cor escura */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    font-weight: bold; /* Negrito */
+}
+
+/* Texto do bloco */
+.text-sub {
+    font-size: 1rem; /* Tamanho padrão para leitura */
+    color: #555; /* Cor cinza escuro */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin: 0;
+}
+
+.subtitle-sobre i{
+    font-size: 30px;
+}
+
+
+/* FIM DO SOBRE MIM */
