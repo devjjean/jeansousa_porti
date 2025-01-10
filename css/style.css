@@ -32,7 +32,7 @@ body{
 
 /* MANIPULAÇÃO DA CLASS MÃE DO MENU */
 .container-menu{
-    background: #fdfdfd;
+    background: #fff;
     border: 1px solid #ddd;
     width: 98%;
     height: auto;
@@ -71,7 +71,7 @@ ul{
     transition: 2ms;
 }
 
-    /* RESPONSIVIDADE PARA TELA MENOR QUE 768px (Exemplo: Tablets e Telas Menores) */
+/* RESPONSIVIDADE PARA TELA MENOR QUE 768px (Exemplo: Tablets e Telas Menores) */
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
@@ -90,7 +90,7 @@ ul{
 /* RESPONSIVIDADE PARA TELA MENOR QUE 480px (Exemplo: Celulares) */
 @media (max-width: 480px) {
     .item-menu {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         margin-right: 10px;
     }
 
@@ -108,7 +108,7 @@ ul{
 
 /* ============================================================= */
 
-/* INÍCIO DA HOME */
+/* 02 INÍCIO DA HOME */
 
 
 .section-home section{
@@ -116,6 +116,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     margin-top: 7%;
+    padding: 50px;
 }
 
 .home-left{
@@ -176,6 +177,7 @@ ul{
     transition: 0.5s;
 }
 
+
 /* RESPONSIVIDADE PARA TELA MENOR QUE 768px (Exemplo: Tablets e Telas Menores) */
 @media (max-width: 768px) {
     .section-home section {
@@ -222,7 +224,7 @@ ul{
 /* RESPONSIVIDADE PARA TELA MENOR QUE 480px (Exemplo: Celulares) */
 @media (max-width: 480px) {
     .home-left h2 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .home-left p {
@@ -241,13 +243,15 @@ ul{
         font-size: 25px;
     }
 }
-/* FIM DA HOME */
+/* 02 FIM DA HOME */
 
-/* INICIO DO SOBRE MIM */
+/* ============================================================= */
+
+/* 03 INICIO DO SOBRE MIM */
 
 /* ESTILIZAÇÃO DE TODA SEÇÃO */
 .section-sobre {
-    background: #faf7f7;
+    background: #111;
     padding: 6%;
     margin-top: 5%;
 }
@@ -257,13 +261,13 @@ ul{
     padding-bottom: 10px;
     font-size: 1.8rem;
     text-align: center;
-    color: #333;
+    color: #ccc;
     margin-bottom: 10px;
     font-weight: bold; 
 }
 /* ESTILIZAÇÃO DO CONTEÚDO DA SEÇÃO */
 .text-sobre {
-    color: #333;
+    color: #ccc;
     text-align: center;
     max-width: 500px;
     width: 100%;
@@ -276,43 +280,193 @@ ul{
     align-items: center;
     text-align: center;
     margin-bottom: 15px;
+    color: #ccc;
 }
 
-/* Contêiner principal para alinhamento */
+/* CONTÊINER DOS BLOCO PARA O ALINHAMENTO */
 .container-sobre {
-    display: flex; /* Flexbox para alinhamento lado a lado */
-    justify-content: space-between; /* Espaço uniforme entre os itens */
-    align-items: flex-start; /* Alinhar os itens ao topo */
-    gap: 20px; /* Espaço entre os blocos */
-    margin-top: 30px; /* Espaçamento superior */
-    padding: 10px; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 10px;
 }
 
-/* Bloco individual */
+/* BLOCO INDIVIDUAIS */
 .subtitle-sobre {
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo */
-    flex: 1; /* Faz os itens ocuparem tamanhos iguais */
-}
-/* Título do bloco */
-.title-sub {
-    font-size: 1.8rem; /* Tamanho maior para destaque */
-    color: #333; /* Cor escura */
-    margin-bottom: 10px; /* Espaçamento inferior */
-    font-weight: bold; /* Negrito */
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    /* Suavidade */
 }
 
-/* Texto do bloco */
+/* TÍTULO DO BLOCO */
+.title-sub {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* TEXTO DO BLOCO */
 .text-sub {
-    font-size: 1rem; /* Tamanho padrão para leitura */
-    color: #555; /* Cor cinza escuro */
-    line-height: 1.5; /* Espaçamento entre linhas */
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
     margin: 0;
 }
 
+/* ESTILIZAÇÃO DOS ICONES */
 .subtitle-sobre i{
     font-size: 30px;
 }
 
+/* Responsividade para tablets (telas de largura menor que 768px) */
+@media (max-width: 768px) {
+    .container-sobre {
+        flex-direction: column; /* Empilhar os blocos verticalmente */
+        align-items: center; /* Centralizar os blocos */
+        gap: 30px; /* Aumentar o espaçamento entre os blocos */
+    }
 
-/* FIM DO SOBRE MIM */
+    .subtitle-sobre {
+        padding: 15px; /* Reduzir o padding */
+    }
+
+    .title-sobre {
+        font-size: 1.5rem; /* Reduzir o tamanho do título */
+    }
+
+    .title-sub {
+        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+    }
+
+    .text-sub {
+        font-size: 0.9rem; /* Ajustar o tamanho do texto para caber melhor */
+    }
+}
+
+/* Responsividade para celulares (telas de largura menor que 480px) */
+@media (max-width: 480px) {
+    .section-sobre {
+        padding: 4%; /* Reduzir o padding geral */
+    }
+
+    .title-sobre {
+        font-size: 1.7rem; /* Reduzir ainda mais o título principal */
+        margin-bottom: 8px;
+    }
+
+    .text-sobre {
+        max-width: 90%; /* Aumentar o aproveitamento da largura */
+    }
+
+    .container-sobre {
+        gap: 20px; /* Ajustar o espaçamento entre os blocos */
+    }
+
+    .subtitle-sobre {
+        padding: 10px; /* Reduzir ainda mais o padding */
+    }
+
+    .title-sub {
+        font-size: 1.7rem; /* Subtítulos menores */
+    }
+
+    .text-sub {
+        font-size: 1.0rem; /* Texto do conteúdo ainda menor */
+        line-height: 1.4; /* Ajustar espaçamento entre linhas */
+    }
+
+    .subtitle-sobre i {
+        font-size: 30px; /* Reduzir o tamanho dos ícones */
+    }
+}
+
+/* 03 FIM DO SOBRE MIM */
+
+/* ============================================================= */
+
+/* 04 INÍCIO DO PROJETOS */
+
+/* Estilização da seção */
+
+.section-projeto {
+    padding: 40px 0;
+    background-color: #252323;
+    background-image: url(/images/background-sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-projeto {
+    background-color: #1111;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.container-projeto h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.container-projeto h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+.container-projeto img {
+    width: 100%;
+    max-width: 530px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px #ccc;
+    margin-bottom: 15px;
+}
+
+.container-projeto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+.btn-projetos {
+    background-color: #cccccca2;
+    color: #111;
+    border: none;
+    padding: 5px 7px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-projetos:hover {
+    background-color: #fdfdfd;
+}
+
+.icon-projeto {
+    margin-top: 15px;
+}
+
+.icon-projeto h4 {
+    margin-bottom: 10px;
+}
+
+.icon-projeto i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
