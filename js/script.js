@@ -29,3 +29,27 @@ ScrollReveal().reveal('.container-projeto', {
     reset: true,
     opacity: null
 });
+
+/////////////////////////////////////////
+
+ // Inicialize o EmailJS com sua chave pública
+ emailjs.init("eC1BRFJvXLP7GIuhH");
+
+ // Capturar o formulário
+ const form = document.getElementById("contact-form");
+
+ form.addEventListener("submit", function(event) {
+     event.preventDefault(); // Prevenir o envio padrão do formulário
+
+     const feedback = document.getElementById("feedback");
+
+     emailjs.sendForm("service_5zvnlcm", "template_k74cuo4", form)
+         .then(function() {
+             feedback.innerHTML = '<div class="success">Mensagem enviada com sucesso!</div>';
+             form.reset(); // Limpar o formulário
+         })
+         .catch(function(error) {
+             feedback.innerHTML = '<div class="error">Erro ao enviar mensagem. Tente novamente.</div>';
+             console.error("Erro:", error);
+         });
+ });

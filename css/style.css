@@ -65,10 +65,13 @@ ul{
     cursor: pointer;
 }
 
+.item-menu:hover{
+    color: #ccc;
+}
+
 /* ADICIONANDO UMA ANIMAÇÃO DE COR QUANDO O CURSOR TIVER POR CIMA DO ITEM DA LISTA */
 .item-menu:hover{
     color: #817d7d;
-    transition: 2ms;
 }
 
 /* RESPONSIVIDADE PARA TELA MENOR QUE 768px (Exemplo: Tablets e Telas Menores) */
@@ -117,6 +120,7 @@ ul{
     align-items: center;
     margin-top: 7%;
     padding: 50px;
+    background: #fff;
 }
 
 .home-left{
@@ -165,6 +169,7 @@ ul{
 
 .home-right .icons-home i {
     font-size: 40px;
+    transition: transform 0.3s ease;
 }
 
 .home-right a{
@@ -173,8 +178,8 @@ ul{
 }
 
 .home-right .icons-home i:hover{
-    color: #5c5a5a;
-    transition: 0.5s;
+    color: #333;
+    transform: scale(1.1);
 }
 
 
@@ -252,13 +257,13 @@ ul{
 /* ESTILIZAÇÃO DE TODA SEÇÃO */
 .section-sobre {
     background: #111;
-    padding: 6%;
+    padding-top: 50px;
     margin-top: 5%;
 }
 
 /* ESTILIZAÇÃO DO TITULO DA SEÇÃO */
 .title-sobre {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 1.8rem;
     text-align: center;
     color: #ccc;
@@ -298,7 +303,6 @@ ul{
     padding: 20px;
     text-align: center;
     flex: 1;
-    /* Suavidade */
 }
 
 /* TÍTULO DO BLOCO */
@@ -395,7 +399,8 @@ ul{
 .section-projeto {
     padding: 40px 0;
     background-color: #252323;
-    background-image: url(/images/background-sobre.jpg);
+    background-image: url(/images/background-project.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -443,7 +448,7 @@ ul{
 }
 
 .btn-projetos {
-    background-color: #cccccca2;
+    background-color: #6c5ce7;
     color: #111;
     border: none;
     padding: 5px 7px;
@@ -452,10 +457,13 @@ ul{
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-projetos:hover {
-    background-color: #fdfdfd;
+    background-color: #5948c6;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .icon-projeto {
@@ -469,4 +477,149 @@ ul{
 .icon-projeto i {
     font-size: 2rem;
     margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon-projeto i:hover{
+    transform: scale(1.1);
+}
+
+
+/* CONTATO */
+
+.section-contato {
+    padding: 100px 20px;
+    background-color: #333;
+}
+
+/* Container do formulário */
+.container-contato {
+    text-align: center;
+    background: #111;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.container-contato h3 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Grupo de formulários */
+.form-grupo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels */
+.form-grupo label {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo input[type="menssage"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Foco nos campos */
+.form-grupo input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
+/* Botão */
+.btn-submit {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #5948c6;
+    transform: scale(1.1);
+    border: 1px solid #ccc;
+}
+
+.success, .error {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+footer .social-links {
+    margin: 5px 0;
+}
+
+footer .social-links i{
+    transition: transform 0.3s ease;
+}
+
+footer .social-links i:hover{
+    transform: scale(1.1);
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #111;
+    font-size: 33px;
+    text-decoration: none;
+}
+footer .social-links a:hover {
+    color: #181818;
+}
+footer p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+footer p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
 }

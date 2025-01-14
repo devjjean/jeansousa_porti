@@ -14,10 +14,10 @@
             <div class="nav-menu">
                 <nav>
                     <ul>
-                        <li><a href="#" class="item-menu">Home</a></li>
-                        <li><a href="#" class="item-menu">Sobre mim</a></li>
-                        <li><a href="#" class="item-menu">Projetos</a></li>
-                        <li><a href="#" class="item-menu">Contato</a></li>
+                        <li><a href="#home" class="item-menu">Home</a></li>
+                        <li><a href="#sobre" class="item-menu">Sobre mim</a></li>
+                        <li><a href="#projeto" class="item-menu">Projetos</a></li>
+                        <li><a href="#contato" class="item-menu">Contato</a></li>
                     </ul>
                 </nav>
             </div><!--nav-menu-->
@@ -25,14 +25,14 @@
     </div><!--container-menu-->
 
     <div class="section-home">
-        <section>
+        <section id="home">
             <div class="home-left">
             <h2>Hello World!</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nesciunt, maxime fugiat repellat reiciendis non voluptate veniam reprehenderit earum eveniet doloremque perspiciatis nihil magnam laudantium magni quisquam, quae itaque tempora?</p>
+            <p>Sou desenvolvedor de software com experiência acadêmica em programação, sempre em busca de aprimorar meus conhecimentos e habilidades a cada novo código.</p>
             </div><!--home-left-->
 
             <div class="home-right">
-                <img src="images/jean-home.jpg" alt="img-home">
+                <img src="images/jean.jpg" alt="img-home">
                 <div class="icons-home">
                     <a href="https://www.github.com/devjjean/"><i class="fab fa-github fa-x3"></i></a>
                     <a href="https://www.linkedin.com/in/jean-sousa-b43b63257/"><i class="fab fa-linkedin fa-x3"></i></a>
@@ -42,16 +42,16 @@
     </div><!--section-home-->
 
     <div class="section-sobre">
-        <section>
+        <section id="sobre">
             <h2 class="title-sobre">Sobre Mim</h2>
             <div class="text-sobre">
-                <p>Sou um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes. Meu objetivo é atuar em projetos desafiadores que me permitam crescer tecnicamente e contribuir para o desenvolvimento de produtos de qualidade. Busco me especializar em desenvolvimento web, com foco em front-end e integrações com back-end utilizando tecnologias modernas</p>
+                <p>Me chamo Jean Sousa, sou de Recife - PE e tenho 19 anos. Atualmente, estou no 5º período de Ciência da Computação na Universidade Estácio de Sá. Logo que iniciei a faculdade, comecei a programar e, desde então, venho aprendendo muito sobre diferentes tecnologias e criando projetos para aprimorar minhas habilidades. Hoje, tenho experiência com JavaScript, HTML, CSS e Python.</p>
             </div><!--text-sobre-->
 
             <div class="container-sobre">
                 <div class="subtitle-sobre">
                     <h3 class="title-sub">Objetivo</h3>
-                    <p class="text-sub">Sou um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes. Meu objetivo é atuar em projetos desafiadores que me permitam crescer tecnicamente e contribuir para o desenvolvimento de produtos de qualidade. Busco me especializar em desenvolvimento web, com foco em front-end e integrações com back-end utilizando tecnologias modernas</p>
+                    <p class="text-sub">Meu objetivo é atuar como desenvolvedor front-end em um time talentoso, onde possa aprender com pessoas incríveis e contribuir para projetos desafiadores, trabalhando em equipe.</p>
                 </div>
             
                 <div class="subtitle-sobre">
@@ -75,7 +75,7 @@
     </div>
 
     <div class="section-projeto">
-        <section>
+        <section id="projeto">
             <!-- Projeto 1 -->
             <div class="container-projeto" id="projeto-1">
                 <h3>Nome do Projeto</h3>
@@ -117,9 +117,45 @@
             </div><!-- container-projeto -->
         </section>
     </div><!-- section-projeto -->
+
+    <div class="section-contato">
+        <section id="contato">
+            <div class="container-contato">
+                <h3>Contato</h3>
+                <form id="contact-form">
+                    <div class="form-grupo">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" placeholder="Digite aqui seu nome!" required>
+                    </div><!--nome-->
+
+                    <div class="form-grupo">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Digite aqui seu email!" required>
+                    </div><!--email-->
+
+                    <div class="form-grupo">
+                        <label for="menssage">Mensagem:</label>
+                        <input type="menssage" name="menssage" placeholder="Digite aqui sua mensagem!" required>
+                    </div><!--mensagem-->
+                    <button type="submit" class="btn-submit">Enviar</button>
+                    <div id="feedback"></div>
+                </form>
+            </div>
+        </section>
+    </div><!--section-contato-->
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.github.com/devjjean/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jean-sousa-b43b63257/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Jean Sousa. Todos os direitos reservados.</p>
+    </footer>
     
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>
