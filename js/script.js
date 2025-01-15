@@ -1,5 +1,6 @@
+    // Usei o ScrollReveal para deixar as seções com animação de entrada e deixando mais dinâmico
 
- // Inicializa o ScrollReveal
+    // Inicializa o ScrollReveal
  ScrollReveal().reveal('.section-home', {
     distance: '50px',
     origin: 'bottom',
@@ -32,7 +33,10 @@ ScrollReveal().reveal('.container-projeto', {
 
 /////////////////////////////////////////
 
- // Inicialize o EmailJS com sua chave pública
+
+    // EmailJS para receber a mensagem de contato
+
+    // Inicialize o EmailJS com sua chave pública
  emailjs.init("eC1BRFJvXLP7GIuhH");
 
  const form = document.getElementById("contact-form");
