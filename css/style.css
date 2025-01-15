@@ -111,9 +111,9 @@ ul{
 
 /* ============================================================= */
 
-/* 02 INÍCIO DA HOME */
+/* 02 INÍCIO DA SEÇÃO HOME */
 
-
+/* ESTILIZAÇÃO DA SEÇÃO HOME */
 .section-home section{
     display: flex;
     justify-content: space-between;
@@ -122,27 +122,27 @@ ul{
     padding: 50px;
     background: #fff;
 }
-
+/* ESTILIZAÇÃO DO CONTEÚDO À ESQUERDA NA SEÇÃO HOME */
 .home-left{
     text-align: left;
     padding-left: 15%;
     width: 100%;
     height: auto;
 }
-
+/* ESTILIZAÇÃO DO TÍTULO H2 À ESQUERDA NA SEÇÃO HOME */
 .home-left h2{
     font-size: 2.5rem;
     color: #111;
     margin-bottom: 10px;
 }
-
+/* ESTILIZAÇÃO DO PARÁGRAFO À ESQUERDA NA SEÇÃO HOME */
 .home-left p {
     max-width: 400px;
     width: 100%;   
     color: #333;
     text-align: justify;
 }
-
+/* ESTILIZAÇÃO DO CONTEÚDO À DIREITA NA SEÇÃO HOME */
 .home-right {
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ ul{
     width: 100%;
     align-items: center;
 }
-
+/* ESTILIZAÇÃO DA IMAGEM À DIREITA NA SEÇÃO HOME */
 .home-right img {
     width: 100%;
     height: auto;
@@ -161,29 +161,28 @@ ul{
     border-radius: 30%;
     pointer-events: none;
 }
-
+/* ESTILIZAÇÃO DOS ÍCONES NA SEÇÃO HOME À DIREITA */
 .home-right .icons-home {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
+/* ESTILIZAÇÃO DOS ÍCONES NA SEÇÃO HOME (EFEITO HOVER) */
 .home-right .icons-home i {
     font-size: 40px;
     transition: transform 0.3s ease;
 }
-
+/* ESTILIZAÇÃO DOS LINKS NA SEÇÃO HOME (DESABILITA O LINK) */
 .home-right a{
     text-decoration: none;
     color: inherit;
 }
-
+/* ESTILIZAÇÃO DO EFEITO HOVER NOS ÍCONES NA SEÇÃO HOME */
 .home-right .icons-home i:hover{
     color: #333;
     transform: scale(1.1);
 }
-
 
 /* RESPONSIVIDADE PARA TELA MENOR QUE 768px (Exemplo: Tablets e Telas Menores) */
 @media (max-width: 768px) {
@@ -191,38 +190,31 @@ ul{
         flex-direction: column;
         margin-top: 10%;
     }
-
     .home-left {
         text-align: center;
         padding-left: 0;
         width: 100%;
     }
-
     .home-left h2 {
         font-size: 1.5rem;
     }
-
     .home-left p {
         max-width: 80%;
         margin: 0 auto;
         padding-bottom: 20px;
     }
-
     .home-right {
         text-align: center;
         padding-right: 0;
     }
-
     .home-right img {
         width: 300px;
         height: auto;
-        border-radius: 50%;
+        border-radius: 30%;
     }
-
     .home-right .icons-home {
         gap: 15px;
     }
-
     .home-right .icons-home i {
         font-size: 30px;
     }
@@ -233,28 +225,24 @@ ul{
     .home-left h2 {
         font-size: 1.8rem;
     }
-
     .home-left p {
         font-size: 0.9rem;
     }
-
     .home-right img {
         width: 250px;
     }
-
     .home-right .icons-home {
         gap: 10px;
     }
-
     .home-right .icons-home i {
         font-size: 25px;
     }
 }
-/* 02 FIM DA HOME */
+/* 02 FIM DA SEÇÃO HOME */
 
 /* ============================================================= */
 
-/* 03 INICIO DO SOBRE MIM */
+/* 03 INICIO DA SEÇÃO SOBRE MIM */
 
 /* ESTILIZAÇÃO DE TODA SEÇÃO */
 .section-sobre {
@@ -281,7 +269,6 @@ ul{
     height: auto;
     margin: auto;
 }
-
 /* ESTILIZAÇÃO DOS PARÁGRAFOS */
 .text-sobre p {
     align-items: center;
@@ -289,7 +276,6 @@ ul{
     margin-bottom: 15px;
     color: #ccc;
 }
-
 /* CONTÊINER DOS BLOCO PARA O ALINHAMENTO */
 .container-sobre {
     display: flex;
@@ -299,14 +285,12 @@ ul{
     margin-top: 30px;
     padding: 10px;
 }
-
 /* BLOCO INDIVIDUAIS */
 .subtitle-sobre {
     padding: 20px;
     text-align: center;
     flex: 1;
 }
-
 /* TÍTULO DO BLOCO */
 .title-sub {
     font-size: 1.8rem;
@@ -314,7 +298,6 @@ ul{
     margin-bottom: 10px;
     font-weight: bold;
 }
-
 /* TEXTO DO BLOCO */
 .text-sub {
     font-size: 1rem;
@@ -322,13 +305,11 @@ ul{
     line-height: 1.5;
     margin: 0;
 }
-
 /* ESTILIZAÇÃO DOS ICONES */
 .subtitle-sobre i{
     font-size: 30px;
     transition: transform 0.3s ease;
 }
-
 .subtitle-sobre i:hover{
     transform: scale(1.1);
 }
@@ -342,67 +323,59 @@ ul{
     }
 
     .subtitle-sobre {
-        padding: 15px; /* Reduzir o padding */
+        padding: 15px;
     }
 
     .title-sobre {
-        font-size: 1.5rem; /* Reduzir o tamanho do título */
+        font-size: 1.5rem;
     }
 
     .title-sub {
-        font-size: 1.6rem; /* Reduzir o tamanho dos subtítulos */
+        font-size: 1.6rem;
     }
 
     .text-sub {
-        font-size: 0.9rem; /* Ajustar o tamanho do texto para caber melhor */
+        font-size: 0.9rem;
     }
 }
 
 /* Responsividade para celulares (telas de largura menor que 480px) */
 @media (max-width: 480px) {
     .section-sobre {
-        padding: 4%; /* Reduzir o padding geral */
+        padding: 4%;
     }
-
     .title-sobre {
-        font-size: 1.7rem; /* Reduzir ainda mais o título principal */
+        font-size: 1.7rem;
         margin-bottom: 8px;
     }
-
     .text-sobre {
-        max-width: 90%; /* Aumentar o aproveitamento da largura */
+        max-width: 90%;
     }
-
     .container-sobre {
-        gap: 20px; /* Ajustar o espaçamento entre os blocos */
+        gap: 20px;
     }
-
     .subtitle-sobre {
-        padding: 10px; /* Reduzir ainda mais o padding */
+        padding: 10px;
     }
-
     .title-sub {
-        font-size: 1.7rem; /* Subtítulos menores */
+        font-size: 1.7rem;
     }
-
     .text-sub {
-        font-size: 1.0rem; /* Texto do conteúdo ainda menor */
-        line-height: 1.4; /* Ajustar espaçamento entre linhas */
+        font-size: 1.0rem;
+        line-height: 1.4;
     }
-
     .subtitle-sobre i {
-        font-size: 30px; /* Reduzir o tamanho dos ícones */
+        font-size: 30px;
     }
 }
 
-/* 03 FIM DO SOBRE MIM */
+/* 03 FIM DA SEÇÃO SOBRE MIM */
 
 /* ============================================================= */
 
-/* 04 INÍCIO DO PROJETOS */
+/* 04 INÍCIO DA SEÇÃO PROJETOS */
 
 /* Estilização da seção */
-
 .section-projeto {
     padding: 40px 0;
     background-color: #252323;
@@ -411,7 +384,7 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* ESTILIZAÇÃO DO CONTAINER DO PROJETO */
 .container-projeto {
     background-color: #1111;
     border: 1px solid #ddd;
@@ -422,20 +395,20 @@ ul{
     border-radius: 30px;
     text-align: center;
 }
-
+/* ESTILIZAÇÃO DO TÍTULO H3 DENTRO DO CONTAINER */
 .container-projeto h3 {
     margin-top: 0;
     margin-bottom: 10px;
     color: #ccc;
 }
-
+/* ESTILIZAÇÃO DO TÍTULO H4 DENTRO DO CONTAINER */
 .container-projeto h4 {
     margin-top: 0;
     margin-bottom: 10px;
     color: #ccc;
     font-size: 1.1rem;
 }
-
+/* ESTILIZAÇÃO DAS IMAGENS DENTRO DO CONTAINER */
 .container-projeto img {
     width: 100%;
     max-width: 530px;
@@ -445,7 +418,7 @@ ul{
     margin-bottom: 15px;
     object-fit: cover;
 }
-
+/* ESTILIZAÇÃO DOS PARÁGRAFOS DENTRO DO CONTAINER */
 .container-projeto p {
     font-size: 1rem;
     line-height: 1.5;
@@ -454,7 +427,7 @@ ul{
     margin: 0 auto;
     color: #ccc;
 }
-
+/* ESTILIZAÇÃO DO BOTÃO DE PROJETO */
 .btn-projetos {
     background-color: #6c5ce7;
     color: #fff;
@@ -467,33 +440,36 @@ ul{
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+/* ESTILIZAÇÃO DO EFEITO HOVER NO BOTÃO */
 .btn-projetos:hover {
     background-color: #5948c6;
     transform: scale(1.1);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
-
+/* ESTILIZAÇÃO DA SEÇÃO DE ÍCONES DO PROJETO */
 .icon-projeto {
     margin-top: 15px;
 }
-
+/* ESTILIZAÇÃO DO TÍTULO H4 DENTRO DA SEÇÃO DE ÍCONES */
 .icon-projeto h4 {
     margin-bottom: 10px;
 }
-
+/* ESTILIZAÇÃO DOS ÍCONES DENTRO DA SEÇÃO */
 .icon-projeto i {
     font-size: 2rem;
     margin-right: 10px;
     transition: transform 0.3s ease;
 }
-
+/* ESTILIZAÇÃO DO EFEITO HOVER NOS ÍCONES */
 .icon-projeto i:hover{
     transform: scale(1.1);
 }
 
+/* 04 FIM DA SEÇÃO PROJETOS */
 
-/* CONTATO */
+/* ============================================================= */
+
+/* 05 INÍCIO DA SEÇÃO CONTATO */
 
 .section-contato {
     padding: 100px 20px;
@@ -592,6 +568,14 @@ ul{
     color: #721c24;
 }
 
+/* 05 FIM DA SEÇÃO CONTATO */
+
+/* ============================================================= */
+
+/* 06 INÍCIO DA SEÇÃO FOOTER */
+
+
+/* ESTILIZAÇÃO DO FOOTER */
 footer {
     background-color: #333;
     color: #fff;
@@ -599,35 +583,41 @@ footer {
     padding: 20px;
     position: relative;
 }
+/* ESTILIZAÇÃO DAS REDES SOCIAIS NO FOOTER */
 footer .social-links {
     margin: 5px 0;
 }
-
+/* ESTILIZAÇÃO DOS ÍCONES DAS REDES SOCIAIS */
 footer .social-links i{
     transition: transform 0.3s ease;
 }
-
+/* ESTILIZAÇÃO DO EFEITO HOVER NOS ÍCONES DAS REDES SOCIAIS */
 footer .social-links i:hover{
     transform: scale(1.1);
 }
-
+/* ESTILIZAÇÃO DOS LINKS DAS REDES SOCIAIS */
 footer .social-links a {
     margin: 0 10px;
     color: #111;
     font-size: 33px;
     text-decoration: none;
 }
+/* ESTILIZAÇÃO DO EFEITO HOVER NOS LINKS DAS REDES SOCIAIS */
 footer .social-links a:hover {
     color: #181818;
 }
+/* ESTILIZAÇÃO DO PARÁGRAFO NO FOOTER */
 footer p {
     margin: 5px 0;
     font-size: 12px;
 }
+/* ESTILIZAÇÃO DOS LINKS NO PARÁGRAFO DO FOOTER */
 footer p a {
     color: #007BFF;
     text-decoration: none;
 }
+/* ESTILIZAÇÃO DO EFEITO HOVER NOS LINKS DO PARÁGRAFO */
 footer p a:hover {
     text-decoration: underline;
 }
+/* 06 FIM DA SEÇÃO FOOTER */
