@@ -33,7 +33,6 @@ ScrollReveal().reveal('.container-projeto', {
 
 /////////////////////////////////////////
 
-
     // EmailJS para receber a mensagem de contato
 
     // Inicialize o EmailJS com sua chave pública
